@@ -1,0 +1,33 @@
+6. Complement Accumulator (CMA)
+Modify
+-> Machine Ins
+-> New
+-> CMA
+-> Opcode = E200
+-> Type = Register-Reference
+Implementation
+-> Logical
+-> Name: Note Not
+-> AC ← AC' (1's Complement)
+-> Type = Logical
+-> Source 2 = AC
+-> Destination = AC
+Drag -> AC ← AC'
+End
+
+7. Increment Accumulator (INC)
+Modify
+-> Instructions
+-> New
+-> INC
+-> Opcode = E020
+-> Type = Register-Reference
+Implementation
+-> Arithmetic
+-> Name: Increment (INCR)
+-> INCR ← AC + 1
+-> Source 1 = AC
+-> Source 2 = 1 (Implicit/Constant)
+-> Type = Addition
+-> Dest = AC
+Drag -> INCR ← AC and END (This implies AC is incremented, AC ← AC + 1)
