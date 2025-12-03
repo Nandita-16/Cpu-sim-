@@ -1,0 +1,38 @@
+machine BasicComputer
+{.    RAM 
+    wordsize 16
+    memorysize 4096
+
+    ;============================
+    ; Register Set
+    ;============================
+    HARDWARE MODULE 
+    register IR 16
+    register DR 16
+    register AC 16
+    register AR 12
+    register PC 12
+    register I 1
+    register E 1
+    register S 1
+
+    flagrun S
+practical 2 
+    ;============================================
+    ; FETCH ROUTINE OF THE INSTRUCTION CYCLE
+    ;============================================
+    instruction fetch
+    { micro- instructions 
+        r to r transfer 
+        T0: AR <- PC
+        memory access 
+        T1: IR <- M[AR] 
+        increment
+        INCR <- PC
+        Transfer r to r 
+        T2: AR <- IR
+        DECODE
+        T3: DECODE (IR)
+    }
+
+}
