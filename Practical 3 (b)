@@ -1,0 +1,98 @@
+1.modify
+Machine instruction 
+edit fields 
+
+Name      Type      Buffer    Direction
+Input     integer   AC        Input
+Output    integer   AC        Output
+
+2
+
+⭐ 1) INP Instruction 
+
+Instruction :-
+INP  opcode = F800
+drag= register 
+
+Implementation :-
+
+I/O (double click)
+
+Name  Type  Buffer  Direction
+Input  integer  AC  Input
+Output integer  AC  Output
+
+( drag Input and And. End )
+
+
+---
+
+⭐ 2) OUT Instruction (Same Style)
+
+Instruction :-
+OUT  opcode = F400
+drag - register 
+
+Implementation :-
+
+drag Output and End
+...
+
+Micro-instruction
+Instructions
+New
+HLT 7001 - opcode.
+drag - register 
+
+Implementation
+Set condition-bit
+New
+Name: Carry bit
+Value: 1
+Halt: Carry bit
+drag
+(1) Halt HLT
+(2) End
+
+
+Instructions format
+STA
+format- opcode:  0x6
+drag -op and addr both 
+
+Implementation.
+Memory access
+New
+MAIN[AR] <-AC 
+direc - Write
+data - AC
+Add - AR.
+Then Implement MAIN[AR]<- AC
+
+ Modify (Machine Ins)
+Instructions :
+New
+ADD
+Opcode – 0x2
+drag- op and register 
+
+Implementation !
+DR <-MAIN[AR]
+dis – read
+data – DR
+add – AR
+
+drag
+DR <- MAIN[AR]
+for adding
+
+go to Arithmetic Ins.
+Name – ACC <- AC + DR
+Source 1 – AC
+Source 2 – dr 
+dest – AC
+Carry bit
+
+drag it  (Arithmetic)
+Now Machine is Ready.
+Execute it
