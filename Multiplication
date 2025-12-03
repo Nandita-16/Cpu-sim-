@@ -1,0 +1,23 @@
+5. Multiplication (MUL) Operation
+Modify (Machine Ins)
+-> Instructions
+-> New
+-> MUL
+-> Opcode = 0x8
+Implementation (Fetch Operand)
+-> DR ← MAIN[AR]
+-> dis - read
+-> data - DR
+-> add - AR
+Drag DR ← MAIN[AR] for multiplying
+go to Arithmetic Ins.
+Name: MUL
+ACC ← AC * DR
+Source 1 = AC
+Source 2 = DR
+Type = multiplication
+Dest = AC
+Carry bit (Set if result overflows register size)
+Drag it AC ← AC * DR (Arithmetic)
+Now Machine is Ready.
+Execute it
