@@ -1,0 +1,18 @@
+4. Bitwise XOR Operation
+Modify (Machine Ins)
+-> Instructions
+-> New
+-> XOR
+-> Opcode = E400
+-> Type = Register-Reference
+Implementation
+-> Logical
+-> Name: XOR
+-> AC ← AC ⊕ DR
+-> Source 1 = AC
+-> Source 2 = DR
+-> Type = Logical
+-> Dest = AC
+-> Carry bit (Optional, usually not affected by pure logical operations)
+Drag -> AC ← AC ⊕ DR
+End
